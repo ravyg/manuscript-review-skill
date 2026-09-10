@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Manuscript Review (Claude Skill)"
+abstract: >-
+  A portable Claude Skill for multi-perspective review of a research paper. It runs six
+  review passes (peer review, statistics & rigor, fact-check & citations, literature &
+  positioning, writing quality & AI-writing detection, and scorecard & venue) and produces
+  a self-contained HTML review dossier plus a ranked summary. Read-only: it never edits the
+  author's manuscript. Usable in claude.ai and Cowork.
+type: software
+authors:
+  - family-names: Gupta
+    given-names: Ravish
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # <-- add if available
+  - family-names: Zhu
+    given-names: Fangyi
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # <-- add if available
+repository-code: "https://github.com/ravyg/manuscript-review-skill"
+version: "0.1.0"
+date-released: "2026-09-10"
+license: MIT
+doi: "10.5281/zenodo.22698078"
