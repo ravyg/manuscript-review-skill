@@ -1,21 +1,31 @@
 # Manuscript Review
 
-A pre-submission review tool for research papers. Upload a draft and it reads the methods,
-statistics, citations, and writing, then returns **one report that ranks what to fix** — the
-kind of things a reviewer would flag. It runs inside Claude as a "skill," is read-only (never
-changes your file), and is free and open source (MIT).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22698077.svg)](https://doi.org/10.5281/zenodo.22698077)
 
-## Install into Claude (~2 minutes)
+**A pre-submission review for your research paper.** Upload a draft; get back one report that
+ranks what to fix — the issues a reviewer would raise.
 
-1. **Download the skill:**
-   [**manuscript-review-skill-v0.1.0.zip**](https://github.com/ravyg/manuscript-review-skill/releases/latest/download/manuscript-review-skill-v0.1.0.zip)
-2. In **claude.ai**: **Settings → Skills → Add**, and upload the zip. *(Requires a Claude Pro or
-   Team plan; the same Skills list is used by Cowork.)*
-3. Start a chat, **attach your manuscript** (PDF/DOCX), and say **"review this paper."** The
-   report comes back automatically.
+<p align="center">
+  <a href="https://github.com/ravyg/manuscript-review-skill/releases/latest/download/manuscript-review-skill-v0.1.0.zip"><b>⬇&nbsp; Download the skill</b></a>
+  &nbsp;·&nbsp; <a href="#install-2-minutes">Install in 2 minutes</a>
+  &nbsp;·&nbsp; <a href="#citation">Cite</a>
+</p>
 
-> Optional: upload your data/code alongside the paper and it will also check the paper's numbers
-> against them.
+---
+
+## Install (2 minutes)
+
+**1. Download the skill** → [manuscript-review-skill-v0.1.0.zip](https://github.com/ravyg/manuscript-review-skill/releases/latest/download/manuscript-review-skill-v0.1.0.zip)
+
+**2. Add it to Claude** — in [claude.ai](https://claude.ai), go to **Settings → Skills → Add** and
+upload the zip. It appears in your Skills list, switched on.
+
+**3. Use it** — open a chat, **attach your manuscript** (PDF or DOCX), and say **“review this
+paper.”** The report comes back in a few minutes.
+
+> **You need a Claude Pro or Team plan** for Skills. The same skill also works in Cowork.
+> *Optional:* attach your data/code alongside the paper and it will check the paper’s numbers too.
 
 ## What it checks
 
@@ -23,31 +33,42 @@ changes your file), and is free and open source (MIT).
   underpowered tests, weak baselines.
 - **Citations** — whether each reference exists and actually supports the claim; catches
   misattributions.
-- **Writing** — concrete line edits, not vague "make it clearer."
-- **Positioning** — how the work sits against related papers, plus a shortlist of fitting journals.
-- It also flags what it *couldn't* verify, so nothing is oversold.
+- **Writing** — specific line edits, not vague “make it clearer.”
+- **Positioning** — how the paper sits against related work, and a shortlist of journals that fit.
+- It also lists what it **couldn’t** verify, so nothing is oversold.
 
-**Output:** one ranked report — most important problems first, each with a specific fix — plus a
-self-contained HTML dossier you can share.
+## What you get
+
+One ranked report — most important problems first, each with a concrete fix — plus a
+self-contained **HTML dossier** (verdict, scorecard, ranked fixes, fact-check table, suggested
+rewrites, and venue shortlist) that opens offline and is easy to share.
+
+<!-- Screenshot of a sample dossier goes here — replace the line below with:  ![Sample dossier](docs/sample-dossier.png) -->
+*(Sample-dossier screenshot to be added.)*
 
 ## Good to know
 
-It's a fast first pass, not a replacement for expert peer review — check its claims before acting
-on them. Only submit drafts you have the right to share, and follow your target venue's policy on
-AI assistance.
+It’s a fast, thorough **first pass — not a replacement for expert peer review.** Check its claims
+before acting on them, only submit drafts you have the right to share, and follow your target
+venue’s policy on AI assistance.
 
-## What's in this repo
+## Citation
 
-```
-manuscript-review/         # the skill (upload this, packaged in the release zip)
-├── SKILL.md               # the review protocol
-├── references/            # methodology for each review pass
-├── assets/                # HTML dossier template
-└── scripts/               # pure-stdlib dossier builder
-```
-
-## License & citation
-
-[MIT](LICENSE). If you use it, please cite:
+If you use Manuscript Review in your work, please cite the Zenodo record:
 
 > Gupta, R., & Zhu, F. (2026). *Manuscript Review*. Zenodo. https://doi.org/10.5281/zenodo.22698077
+
+```bibtex
+@software{gupta_zhu_manuscript_review_2026,
+  author    = {Gupta, Ravish and Zhu, Fangyi},
+  title     = {Manuscript Review},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.22698077},
+  url       = {https://doi.org/10.5281/zenodo.22698077}
+}
+```
+
+## License
+
+[MIT](LICENSE) © Ravish Gupta and Fangyi Zhu.
