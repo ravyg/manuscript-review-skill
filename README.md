@@ -43,8 +43,9 @@ One ranked report — most important problems first, each with a concrete fix �
 self-contained **HTML dossier** (verdict, scorecard, ranked fixes, fact-check table, suggested
 rewrites, and venue shortlist) that opens offline and is easy to share.
 
-<!-- Screenshot of a sample dossier goes here — replace the line below with:  ![Sample dossier](docs/sample-dossier.png) -->
-*(Sample-dossier screenshot to be added.)*
+![Example: ranked priority fixes from a sample review](docs/img/3-priority-fixes.png)
+
+*Example from a review of a fictional sample paper.* **→ [How to read a report](docs/report-guide.md)** — a walkthrough of every part of the dossier.
 
 ## Good to know
 
